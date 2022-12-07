@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.symulator.PromujController">
+   <children>
+      <Pane fx:id="panel_tlo" layoutX="30.0" layoutY="58.0" prefHeight="320.0" prefWidth="540.0">
+         <children>
+            <Button fx:id="przycisk_radio" layoutX="28.0" layoutY="26.0" mnemonicParsing="false" onAction="#radioAction" prefHeight="53.0" prefWidth="169.0" text="Take part in radio show" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="prycisk_wywiad" layoutX="28.0" layoutY="99.0" mnemonicParsing="false" onAction="#wywiadAction" prefHeight="53.0" prefWidth="169.0" text="Give an interview" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="przycisk_music_show" layoutX="28.0" layoutY="166.0" mnemonicParsing="false" onAction="#musicShowAction" prefHeight="53.0" prefWidth="169.0" text="Take part in music show" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="przycisk_reklama" layoutX="28.0" layoutY="236.0" mnemonicParsing="false" onAction="#reklamaAction" prefHeight="53.0" prefWidth="169.0" text="Do an advertisment" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Label layoutX="220.0" layoutY="26.0" text="By taking part in radio show you get:" />
+            <Label layoutX="236.0" layoutY="99.0" text="By giving an interview you get:" />
+            <Label layoutX="293.0" layoutY="117.0" text="-150 HP" />
+            <Label layoutX="292.0" layoutY="134.0" text="+3000 $" />
+            <Label layoutX="293.0" layoutY="44.0" text="-100 HP" />
+            <Label layoutX="292.0" layoutY="61.0" text="+2000 $" />
+            <Label layoutX="228.0" layoutY="166.0" text="By taking part in music show you get:" />
+            <Label layoutX="292.0" layoutY="184.0" text="-200 HP" />
+            <Label layoutX="291.0" layoutY="201.0" text="+4000 $" />
+            <Label layoutX="236.0" layoutY="236.0" text="By doing an advertisment you get:" />
+            <Label layoutX="291.0" layoutY="254.0" text="-120 HP" />
+            <Label layoutX="290.0" layoutY="271.0" text="+2500 $" />
+         </children></Pane>
+      <Button fx:id="przycisk_powrot" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#powrot" prefHeight="27.0" prefWidth="107.0" text="Go back" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

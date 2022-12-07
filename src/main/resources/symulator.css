@@ -1,0 +1,45 @@
+.label {
+    -fx-font-family: "Lucida Console";
+    -fx-text-fill: #2b1100;
+}
+
+.button {
+    -fx-font-family: "Lucida Console";
+    -fx-background-color: #ff9f63;
+    -fx-border-color: #2b1100;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-text-fill: #2b1100;
+    -fx-background-radius: 8;
+}
+
+.button:hover {
+    -fx-background-color: #fab184;
+}
+
+.text-field {
+    -fx-background-color: #f2c0a0;
+    -fx-font-family: "Lucida Console";
+}
+
+#panel_lewy {
+    -fx-background-color: #ebd9cc;
+}
+
+#panel_prawy {
+    -fx-background-color: #FFF;
+}
+
+#tabela_idole {
+    -fx-background-color: #f2c0a0;
+}
+
+#ekran_powitalny {
+    -fx-background-color: #FFF;
+}
+
+#panel_tlo {
+    -fx-background-color: #ebd9cc;
+}
+
+

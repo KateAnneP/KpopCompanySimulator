@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.symulator.ZarzadzanieController">
+   <children>
+      <Pane fx:id="panel_tlo" layoutX="36.0" layoutY="39.0" prefHeight="323.0" prefWidth="529.0">
+         <children>
+            <Button fx:id="przycisk_wybierz" layoutX="348.0" layoutY="259.0" mnemonicParsing="false" onAction="#wybierzAction" prefHeight="50.0" prefWidth="159.0" text="Apply" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="35.0" layoutY="23.0" text="Your bands:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="lista_zespoly" layoutX="131.0" layoutY="63.0" prefHeight="159.0" prefWidth="267.0">
+              <columns>
+                <TableColumn fx:id="nazwaColumn" prefWidth="266.0" text="Names" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

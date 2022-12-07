@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="330.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.symulator.wydajAlbumController">
+   <children>
+      <Pane fx:id="panel_tlo" layoutX="38.0" layoutY="56.0" prefHeight="245.0" prefWidth="405.0">
+         <children>
+            <Button fx:id="przycisk_akceptuj" layoutX="209.0" layoutY="164.0" mnemonicParsing="false" onAction="#akceptujAction" prefHeight="53.0" prefWidth="169.0" text="Accept" />
+            <Label layoutX="34.0" layoutY="35.0" text="Enter the number of songs on the album:" />
+            <TextField fx:id="pole_ilosc" layoutX="207.0" layoutY="70.0" prefHeight="34.0" prefWidth="174.0" />
+            <Label layoutX="34.0" layoutY="100.0" prefHeight="53.0" prefWidth="114.0" text="For every song you pay 500 $" wrapText="true" />
+         </children></Pane>
+      <Button fx:id="przycisk_powrot" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#powrotAction" prefHeight="25.0" prefWidth="100.0" text="Go back" />
+   </children>
+</AnchorPane>

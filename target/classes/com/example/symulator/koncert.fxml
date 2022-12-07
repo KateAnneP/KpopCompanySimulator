@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="330.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.symulator.koncertController">
+   <children>
+      <Pane fx:id="panel_tlo" layoutX="38.0" layoutY="56.0" prefHeight="245.0" prefWidth="405.0">
+         <children>
+            <Label layoutX="30.0" layoutY="32.0" text="Tickets price:" />
+            <TextField fx:id="pole_cena" alignment="CENTER_RIGHT" layoutX="190.0" layoutY="28.0" promptText="\$" />
+            <TextField fx:id="pole_ilosc_miejsc" layoutX="190.0" layoutY="80.0" />
+            <Label layoutX="30.0" layoutY="84.0" text="Amount of tickets:" />
+            <Button fx:id="przycisk_akceptuj" layoutX="204.0" layoutY="158.0" mnemonicParsing="false" onAction="#akceptujAction" prefHeight="53.0" prefWidth="169.0" text="Accept" textAlignment="CENTER" />
+         </children></Pane>
+      <Button fx:id="przycisk_powrot" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#powrotAction" prefHeight="27.0" prefWidth="107.0" text="Go back" />
+   </children>
+</AnchorPane>

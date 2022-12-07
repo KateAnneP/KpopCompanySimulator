@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.symulator.Scena2Controller">
+   <children>
+      <AnchorPane fx:id="panel_prawy" layoutX="190.0" prefHeight="661.0" prefWidth="720.0">
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="170.0" layoutX="529.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="448.0" layoutY="142.0" text="Band name:" />
+            <Button fx:id="przycisk_promuj" layoutX="22.0" layoutY="19.0" mnemonicParsing="false" onAction="#promujAction" prefHeight="58.0" prefWidth="170.0" text="Promote">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="przycisk_wydaj_album" layoutX="23.0" layoutY="95.0" mnemonicParsing="false" onAction="#wydajAlbumAction" prefHeight="58.0" prefWidth="170.0" text="Release a new album" textAlignment="CENTER" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="przycisk_zorganizuj_koncert" layoutX="23.0" layoutY="167.0" mnemonicParsing="false" onAction="#koncertAction" prefHeight="58.0" prefWidth="170.0" text="Organize a concert">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="przycisk_wyslij_na_wakacje" layoutX="209.0" layoutY="576.0" mnemonicParsing="false" onAction="#wakacjeAction" prefHeight="58.0" prefWidth="198.0" text="Send on vacation">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="przycisk_zdissabnduj" layoutX="529.0" layoutY="576.0" mnemonicParsing="false" onAction="#disbandAction" prefHeight="58.0" prefWidth="170.0" text="Disband">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label layoutX="251.0" layoutY="542.0" prefHeight="17.0" prefWidth="60.0" text="HP:" />
+            <Label layoutX="22.0" layoutY="255.0" prefHeight="17.0" prefWidth="69.0" text="Songs:" />
+            <Label layoutX="22.0" layoutY="295.0" prefHeight="17.0" prefWidth="69.0" text="Fans:" />
+            <Label layoutX="466.0" layoutY="542.0" prefHeight="17.0" prefWidth="159.0" text="Days to contract end:" />
+            <Label layoutX="23.0" layoutY="327.0" prefHeight="33.0" prefWidth="145.0" text="Days since last comeback:" wrapText="true" />
+            <TextField fx:id="pole_ilosc_piosenek" alignment="CENTER_RIGHT" editable="false" layoutX="113.0" layoutY="251.0" prefHeight="25.0" prefWidth="84.0">
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor></TextField>
+            <TextField fx:id="pole_fani" alignment="CENTER_RIGHT" editable="false" layoutX="113.0" layoutY="291.0" prefHeight="25.0" prefWidth="84.0">
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor></TextField>
+            <TextField fx:id="pole_dni_od_comebacku" alignment="CENTER_RIGHT" editable="false" layoutX="197.0" layoutY="331.0" prefHeight="25.0" prefWidth="84.0">
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor></TextField>
+            <TextField fx:id="pole_hp" alignment="CENTER_RIGHT" editable="false" layoutX="323.0" layoutY="538.0" prefHeight="25.0" prefWidth="84.0">
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor></TextField>
+            <TextField fx:id="pole_dni_kontrakt" alignment="CENTER_RIGHT" editable="false" layoutX="639.0" layoutY="538.0" prefHeight="25.0" prefWidth="60.0">
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor></TextField>
+            <TextField fx:id="pole_nazwa_zesp" alignment="CENTER_RIGHT" editable="false" layoutX="520.0" layoutY="138.0" prefHeight="25.0" prefWidth="179.0">
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor></TextField>
+            <TableView fx:id="tabela_idole" layoutX="435.0" layoutY="183.0" prefHeight="257.0" prefWidth="264.0">
+              <columns>
+                <TableColumn fx:id="ImieColumn" prefWidth="98.0" text="Idol name" />
+                <TableColumn fx:id="WiekColumn" prefWidth="41.0" text="Age" />
+                  <TableColumn fx:id="PozycjaColumn" prefWidth="124.0" text="Position" />
+              </columns>
+            </TableView>
+            <ColorPicker layoutX="22.0" layoutY="378.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panel_lewy" prefHeight="661.0" prefWidth="198.0">
+         <children>
+            <Button fx:id="menu_zarzadzaj_zespolami" layoutX="14.0" layoutY="119.0" mnemonicParsing="false" onAction="#zarzadajAction" prefHeight="58.0" prefWidth="170.0" text="Manage groups" textAlignment="CENTER" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="menu_zadebiutuj_grupe" layoutX="15.0" layoutY="186.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="170.0" text="Debiut a new group" textAlignment="CENTER" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label layoutX="15.0" layoutY="444.0" prefHeight="25.0" prefWidth="170.0" text="Money:" wrapText="true" />
+            <Label fx:id="nazwa_wytworni" layoutX="14.0" layoutY="14.0" prefHeight="43.0" prefWidth="170.0" text="Name of the company:" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="12.0" layoutY="340.0" prefHeight="43.0" prefWidth="170.0" text="Days since start of the company:" wrapText="true" />
+            <Button fx:id="kolejny_dzien" layoutX="80.0" layoutY="543.0" mnemonicParsing="false" onAction="#kolejnyDzienAction" prefHeight="25.0" prefWidth="105.0" text="Next day">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="zamknij_program" layoutX="15.0" layoutY="582.0" mnemonicParsing="false" onAction="#zamknijAplikacjeAction" prefHeight="58.0" prefWidth="170.0" text="Close the game" textAlignment="CENTER" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <TextField fx:id="pole_nazwa_firmy" alignment="CENTER" editable="false" layoutX="13.0" layoutY="63.0" prefHeight="43.0" prefWidth="170.0">
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor></TextField>
+            <TextField fx:id="pole_dni_od_startu" alignment="CENTER_RIGHT" editable="false" layoutX="12.0" layoutY="390.0" prefHeight="43.0" prefWidth="170.0">
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor></TextField>
+            <TextField fx:id="pole_pieniadze" alignment="CENTER_RIGHT" editable="false" layoutX="12.0" layoutY="479.0" prefHeight="43.0" prefWidth="170.0">
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ekran_powitalny" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.symulator.Scena1Controller">
+   <children>
+      <Pane layoutX="123.0" layoutY="210.0" prefHeight="277.0" prefWidth="455.0">
+         <children>
+            <Label layoutX="180.0" layoutY="28.0" text="Welcome in">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="43.0" layoutY="66.0" text="Kpop company owner SIMULATOR">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Button fx:id="przycisk_zaladuj_gre" layoutX="168.0" layoutY="124.0" mnemonicParsing="false" onAction="#przelaczNaScene1c" prefHeight="56.0" prefWidth="119.0" text="Load game">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="przycisk_nowa_gra" layoutX="168.0" layoutY="195.0" mnemonicParsing="false" onAction="#przelaczNaScene1b" prefHeight="56.0" prefWidth="119.0" text="New game">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children></Pane>
+      <Button fx:id="przycisk_zamknij" layoutX="14.0" layoutY="509.0" mnemonicParsing="false" onAction="#zamknijAplikacjeAction" prefHeight="27.0" prefWidth="125.0" text="Close the game" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
